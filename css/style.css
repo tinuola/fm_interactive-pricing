@@ -1,6 +1,6 @@
 :root {
   --dark-cyan: hsl(174, 86%, 45%);
-  --light-cyan: hsl(174, 77%, 80%);
+  --light-cyan: hsl(174, 79%, 65%);
   --light-red: hsl(15, 100%, 70%);
   --lighter-red: hsl(14, 92%, 95%);
   --dark-blue: hsl(227, 35%, 25%);
@@ -100,9 +100,9 @@ input[type="range"] {
   border-radius: .5rem;
   background: var(--light-gray-blue);
   /* background-color: yellow; */
-  background-image: linear-gradient(#ff4500, #ff4500);
+  /* background-image: linear-gradient(#ff4500, #ff4500);
   background-size: 20% 100%;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
 }
 
 input[type="range"]::-webkit-slider-thumb {
@@ -112,7 +112,7 @@ input[type="range"]::-webkit-slider-thumb {
   height: 40px;
   border: 0;
   border-radius: 50%;
-  background: var(--dark-cyan);
+  background: var(--light-cyan);
   background-image: url(../assets/images/icon-slider.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -153,6 +153,13 @@ input[type="range"]::-webkit-slider-thumb {
   margin-right: 0.65rem;
 }
 
+.product-pricing span::before {
+  content: '$';
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--dark-blue);
+}
+
 .billing-block {
   display: flex;
   justify-content: space-between;
@@ -173,6 +180,10 @@ input[type="range"]::-webkit-slider-thumb {
   width: 16px;
   height: 16px;
   border-radius: 50%;
+}
+
+.billing-toggle-active {
+  background-color: var(--light-cyan);
 }
 
 .billing-discount {
@@ -239,3 +250,5 @@ footer {
 .fm-attribution a {
   color: var(--dark-blue);
 }
+
+
