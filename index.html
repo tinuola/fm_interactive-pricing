@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;800&display=swap" rel="stylesheet">
+  <!-- Project Stylesheets -->
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Interactive Pricing Component | Frontend Mentor</title>
+</head>
+<body>
+  <main>
+    <header>
+      <h1 class="sr-only">Interactive Pricing Component - A Frontend Mentor Project</h1>
+      <h2>Simple, traffic-based pricing</h2>
+      <p>Sign-up for our 30-day trial.</p>
+      <p>No credit card required. </p>
+    </header>
+    <section class="container">
+      <div>
+        <p class="product-views"><span>100K </span>Pageviews</p>
+        <label for="" class="sr-only"></label>
+        <progress id="product-views-slider" value="1" max="5"></progress>
+        <p class="product-pricing"><span>$16.00</span> / month</p>
+        <div class="billing-block">
+          <p>Monthly Billing</p>
+          <div class="billing-toggle"><div></div></div>
+          <p>Yearly Billing</p>
+          <p class="billing-discount">25% <span>discount</span></p>
+        </div>
+      </div>
+      <hr class="divider">
+      <div>
+        <ul class="product-benefits-list">
+          <li>Unlimited websites</li>
+          <li>100% data ownership</li>
+          <li>Email reports</li>
+        </ul>
+        <button>Start my trial</button>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p class="fm-attribution">Challenge by <a href="https://www.frontendmentor.io/challenges/interactive-pricing-component-t0m8PIyY8" target="_blank">Frontend Mentor</a></p>
+    <p class="fm-attribution">Coded by <a href="https://tinuola.github.io/fm_interactive-pricing/" target="_blank">TechTinu</a></p>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
