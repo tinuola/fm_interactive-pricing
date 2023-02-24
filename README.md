@@ -1,5 +1,5 @@
-# Frontend Mentor: Challenge Name
-This is a solution to the _[Interactive Pricing Component](https://www.frontendmentor.io/challenges/interactive-pricing-component-t0m8PIyY8)_ challenge on Frontend Mentor. Frontend Mentor challenges help improve coding skills through building realistic projects.
+# Frontend Mentor: Interactive Pricing Component
+Solution to the _[Interactive Pricing Component](https://www.frontendmentor.io/challenges/interactive-pricing-component-t0m8PIyY8)_ challenge on Frontend Mentor.
 
 
 ### Challenge
@@ -14,8 +14,9 @@ Users should be able to:
 Live Site: [https://tinuola.github.io/fm_interactive-pricing/](https://tinuola.github.io/fm_interactive-pricing/)
 
 
-### Potential Enhancement(s)
+### Potential Enhancement
 - When discount is applied, display old price with strikethrough effect?
+- Animate billing toggle and cta button
 
 
 ### Tools & Resources

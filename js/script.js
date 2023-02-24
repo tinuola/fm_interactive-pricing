@@ -2,13 +2,13 @@ const slider = document.querySelector('#product-views-slider')
 
 const toggle = document.querySelector('.billing-toggle')
 
-const pageViews = document.querySelector('.product-views span')
+const pageViews = document.querySelector('.page-views span')
 
 const productPrice = document.querySelector('.product-pricing span')
 
 let discount = 1;
 
-let step = slider.value - 1
+let step = slider.value
 
 const productTiers = [
   { views: '10K', price: 8 },
@@ -24,22 +24,27 @@ const displayPageViews = (num) => {
   pageViews.innerText = views
 }
 
+displayPageViews(step)
+
 
 const displayPricing = (num) => {
   let pricing = productTiers[num].price
   productPrice.innerText = (pricing * discount).toFixed(2)
 }
 
+displayPricing(step)
+
 
 slider.addEventListener('input', function(){
-  step = slider.value - 1
+  step = slider.value 
+
   displayPageViews(step)
   displayPricing(step)
 })
 
 
 toggle.addEventListener('click', function(){
-  step = slider.value - 1
+  step = slider.value
 
   if(!this.classList.contains('billing-toggle-active')){
     this.classList.add('billing-toggle-active')
