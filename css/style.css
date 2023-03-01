@@ -29,8 +29,8 @@ body {
 
 @media (min-width: 768px) {
   body {
-    background-size: contain;
-    background-position-y: -40px;
+    background-size: cover;
+    background-position-y: -400px;
   }
 }
 
