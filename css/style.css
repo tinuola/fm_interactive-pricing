@@ -20,9 +20,18 @@ body {
   font-size: 14px;
   font-weight: 500;
   background-color: var(--paler-blue);
+  background-image: url(../assets/images/bg-pattern.svg);
+  background-repeat: no-repeat;
   color: var(--gray-blue);
   display: grid;
   grid-template-rows: 1fr auto;
+}
+
+@media (min-width: 768px) {
+  body {
+    background-size: contain;
+    background-position-y: -40px;
+  }
 }
 
 .sr-only {
@@ -42,9 +51,6 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url(../assets/images/bg-pattern.svg);
-  background-repeat: no-repeat;
-  /* background-size: contain; */
   padding-left: 1.25rem;
   padding-right: 1.25rem;
 }
@@ -76,7 +82,7 @@ header {
   padding-right: 1.25rem;
 }
 
-@media (min-width: 767px){
+@media (min-width: 768px){
   .container {
     max-width: 575px;
     text-align: left;
@@ -112,7 +118,7 @@ font-size: .9rem;
 line-height: 1.5;
 }
 
-@media (min-width: 767px){
+@media (min-width: 768px){
   header h2 {
     font-size: 1.75rem;
   }
@@ -130,7 +136,7 @@ line-height: 1.5;
   margin-bottom: 1.75rem;
 }
 
-@media (min-width: 767px){
+@media (min-width: 768px){
   .page-views {
     margin-bottom: 0;
   }
@@ -140,7 +146,7 @@ line-height: 1.5;
   margin-top: 1.75rem;
 }
 
-@media (min-width: 767px){
+@media (min-width: 768px){
   .product-pricing {
     order: 1;
     margin-top: 0;
@@ -176,7 +182,7 @@ input[type="range"] {
   background-repeat: no-repeat;
 }
 
-@media (min-width: 767px){
+@media (min-width: 768px){
   input[type="range"] {
     order: 2;
     margin-top: 3rem;
@@ -234,7 +240,7 @@ input[type="range"]::-moz-range-track {
   margin-top: 2rem;
   margin-bottom: 2.5rem;
 }
-@media (min-width: 767px){
+@media (min-width: 768px){
   .billing-block {
     order: 3;
     width: 100%;
@@ -277,7 +283,7 @@ input[type="range"]::-moz-range-track {
   display: none;
 }
 
-@media (min-width: 767px){
+@media (min-width: 768px){
   .billing-discount span {
     display: inline;
   }
@@ -295,7 +301,7 @@ hr.divider {
   margin-bottom: 2.75rem;
 }
 
-@media (min-width: 767px){
+@media (min-width: 768px){
   .product-benefits-list {
     margin-top: 0;
     margin-bottom: 0;
@@ -332,7 +338,7 @@ button:hover {
   color: var(--dark-blue);
 }
 
-@media (min-width: 767px){
+@media (min-width: 768px){
   button {
     width: 45%;
   }
